@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://velvety-salamander-bc702.netlify.app/",
+    "https://velvety-salamander-bc702.netlify.app",
 ]
 
 # CORS_ALLOW_ALL_ORIGINS = True
