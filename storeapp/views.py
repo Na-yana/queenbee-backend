@@ -76,16 +76,23 @@ class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class=CategorySerializers
 
 class ProductViewSet(viewsets.ModelViewSet):
-    queryset=Product.objects.all()
-    serializer_class=ProductSerializers
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializers
 
     def get_queryset(self):
-        queryset= Product.objects.all()
-        category_id= self.request.query_params.get('category')
+        queryset = Product.objects.all()
+
+        category_id = self.request.query_params.get('category')
+        search = self.request.query_params.get('q')
+
         if category_id:
-            queryset= queryset.filter(category_id=category_id)
+            queryset = queryset.filter(category_id=category_id)
+
+        if search:
+            queryset = queryset.filter(name__icontains=search)
+
         return queryset
-    
+        
 @api_view(['GET'])
 def get_category_offer(request, category_id):
 
