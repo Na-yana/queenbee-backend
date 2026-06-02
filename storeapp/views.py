@@ -7,6 +7,11 @@ from django.conf import settings
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import Order
+from django.shortcuts import redirect
+
+
+def home(request):
+    return redirect('/admin/')
 
 @api_view(['POST'])
 def create_order(request):
