@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'queenbee-backend-2p7p.onrender.com',
+    'api.qbwomensessential.com',
     '127.0.0.1',
     'localhost'
 ]
@@ -58,7 +59,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://velvety-salamander-bc702.netlify.app",
+    'https://qbwomensessential.com',
+    'https://www.qbwomensessential.com',
+    'https://queenbee-frontend.vercel.app'
 ]
 
 # CORS_ALLOW_ALL_ORIGINS = True
