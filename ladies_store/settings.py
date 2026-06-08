@@ -66,7 +66,7 @@ CORS_ALLOWED_ORIGINS = [
     'https://queenbee-backend-production.up.railway.app',
     'https://qbwomensessential.com',
     'https://www.qbwomensessential.com',
-    # 'https://queenbee-frontend.vercel.app'
+    'https://queenbee-frontend.vercel.app'
 ]
 
 # CORS_ALLOW_ALL_ORIGINS = True
