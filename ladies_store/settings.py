@@ -29,8 +29,8 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    'queenbee-backend-2p7p.onrender.com',
-    'api.qbwomensessential.com',
+    'queenbee-backend-production.up.railway.app',
+    # 'api.qbwomensessential.com',
     '127.0.0.1',
     'localhost'
 ]
@@ -63,17 +63,20 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://qbwomensessential.com',
-    'https://www.qbwomensessential.com',
-    'https://queenbee-frontend.vercel.app'
+    'https://queenbee-backend-production.up.railway.app'
+    # 'https://qbwomensessential.com',
+    # 'https://www.qbwomensessential.com',
+    # 'https://queenbee-frontend.vercel.app'
 ]
 
 # CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://api.qbwomensessential.com",
-    "https://qbwomensessential.com",
-    "https://www.qbwomensessential.com",
+        'https://queenbee-backend-production.up.railway.app'
+
+    # "https://api.qbwomensessential.com",
+    # "https://qbwomensessential.com",
+    # "https://www.qbwomensessential.com",
 ]
 
 ROOT_URLCONF = 'ladies_store.urls'
