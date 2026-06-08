@@ -64,8 +64,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'https://queenbee-backend-production.up.railway.app'
-    # 'https://qbwomensessential.com',
-    # 'https://www.qbwomensessential.com',
+    'https://qbwomensessential.com',
+    'https://www.qbwomensessential.com',
     # 'https://queenbee-frontend.vercel.app'
 ]
 
@@ -74,9 +74,9 @@ CORS_ALLOWED_ORIGINS = [
 CSRF_TRUSTED_ORIGINS = [
         'https://queenbee-backend-production.up.railway.app'
 
-    # "https://api.qbwomensessential.com",
-    # "https://qbwomensessential.com",
-    # "https://www.qbwomensessential.com",
+    "https://api.qbwomensessential.com",
+    "https://qbwomensessential.com",
+    "https://www.qbwomensessential.com",
 ]
 
 ROOT_URLCONF = 'ladies_store.urls'
