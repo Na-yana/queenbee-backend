@@ -63,7 +63,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://queenbee-backend-production.up.railway.app'
+    'https://queenbee-backend-production.up.railway.app',
     'https://qbwomensessential.com',
     'https://www.qbwomensessential.com',
     # 'https://queenbee-frontend.vercel.app'
@@ -72,7 +72,7 @@ CORS_ALLOWED_ORIGINS = [
 # CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
-        'https://queenbee-backend-production.up.railway.app'
+        'https://queenbee-backend-production.up.railway.app',
 
     "https://api.qbwomensessential.com",
     "https://qbwomensessential.com",
