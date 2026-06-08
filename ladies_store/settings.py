@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'queenbee-backend-production.up.railway.app',
-    # 'api.qbwomensessential.com',
+    'api.qbwomensessential.com',
     '127.0.0.1',
     'localhost'
 ]
